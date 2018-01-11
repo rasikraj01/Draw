@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Draw",
+  "description": "A extension  which helps users to draw on webpages.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "assets/img/icon.png"
+      },
+  "permissions": [
+    "activeTab",
+    "storage"
+],
+"content_scripts": [{
+    "css": ["assets/css/style.css"],
+    "js": ["assets/js/content.js"],
+  }],
+  "background":{
+       "scripts":["assets/js/background.js"]
+ }
+
+}
