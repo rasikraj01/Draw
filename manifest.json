@@ -14,11 +14,6 @@
 ],
 "content_scripts": [{
    "matches": ["<all_urls>"],
-    "css": ["assets/css/style.css"],
-    "js": ["assets/js/draw.js"],
-  }],
-  "background":{
-       "scripts":["assets/js/background.js"]
- }
-
+    "js": ["assets/js/p5.min.js","assets/js/p5.dom.min.js", "assets/js/draw.js"]
+  }]
 }
