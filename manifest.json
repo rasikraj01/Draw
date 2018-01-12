@@ -13,8 +13,9 @@
     "storage"
 ],
 "content_scripts": [{
+   "matches": ["<all_urls>"],
     "css": ["assets/css/style.css"],
-    "js": ["assets/js/content.js"],
+    "js": ["assets/js/draw.js"],
   }],
   "background":{
        "scripts":["assets/js/background.js"]
