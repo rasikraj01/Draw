@@ -7,3 +7,4 @@ function trigger(tab){
    chrome.tabs.sendMessage(tab.id, msg);
 }
 console.log('background script');
+console.log('wooooo');

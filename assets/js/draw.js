@@ -21,3 +21,9 @@ let s = function (sketch) {
 };
 
 let myp5 = new p5(s);
+
+chrome.runtime.onMessage.addListener(Message);
+
+function Message(req, sender, res) {
+   console.log('recived ' + req.trigger);
+}
